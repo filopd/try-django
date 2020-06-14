@@ -63,6 +63,20 @@ django-admin startproject <PROJECT_NAME> .
     * null 
         * = True : This field can be kept as null in the db.
         * = False : This field can not be kept as null in the db.
-    
+20. Create a View for Home Page.
+    * Create a new app called pages. Edit the views.py file and enter details as follows:
+    1. Import HttpResonse from django.http
+        * from django.http import HttpResponse
+    2. Create  simple function as follows: 
+        * def home_view(*args, **kwargs):
+            return HttpResponse("<H6>This is View</H6>")
+    3. Update the urls.py inside project.
+        1. import the view from pages app library. Note this gives error for package import but this works fine for me now. Strange !!!
+            * from pages import views
+        2. Add inside urlpatterns
+            * path('', views.home_view, name='home'),
+        3. You can take reference from above documentation inside urls.py
+21.
+
 
 
