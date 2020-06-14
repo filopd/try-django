@@ -24,3 +24,17 @@ python manage.py createsuperuser
 8. Create apps in your project using startapp command.
 python manage.py <appname>
    [This will create a dir in your root with appname and auto gen code inside it.]
+9. These apps let you manage the data. Try to edit the models.py file of your app.
+10. Create a class and inherit the "models.Model".
+   Create few models.TextField(). You can also provide default values.
+11. Assign this app in INSTALLED_APPS ('products',) in setting.py file.
+12. Now create migrations inside products app and migrate it.
+python manage.py makemigrations
+python manage.py migrate
+   Whenever you change the models.py file then you have two run above 2 commands.
+13. Now Register above model by changing the admin.py file.
+   from .models import Product
+   Register your models here.
+   admin.site.register(Product)
+14. Above step register will add 'appname' inside http://127.0.0.1:8000/admin/.
+
