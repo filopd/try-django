@@ -76,7 +76,12 @@ django-admin startproject <PROJECT_NAME> .
         2. Add inside urlpatterns
             * path('', views.home_view, name='home'),
         3. You can take reference from above documentation inside urls.py
-21.
+21. Inside view function, try to add one more parameter request with existing *args, **kwargs.
+    * Both *args and **kwargs will return empty. We are not passing any inputs while opening home page.
+    * Parameter request will return '<WSGIRequest: GET '/'>'
+    * Parameter request.user will return the user name which is currenlty logged in the browser.
+    * Parameter request.user will return "AnonymousUser" if it is opened in incognito mode.
+
 
 
 
