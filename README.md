@@ -48,6 +48,21 @@ django-admin startproject <PROJECT_NAME> .
         <Product: Product object (2)>
     * Now switch to admin page and veriy the objects in app.
     * This useful for adding the data from the backend.
-
+17. In models we have number of field types with their properties as per the data type (can refer documentation).
+18. If there is any modifications in the model fields then you have two ways.
+    1. Set default:
+        * You can set the value of this new field as default for older records.
+        * You will be prompted when you run makemigrations.
+        * This will create one more <*>_initial.py file in migrations dir.
+    2. You can also update the existing <*>_initial.py in migration dir.
+        * makemigrations will compare the fields in intial.py and model.py files.
+19. There are many input params out of which 'blank' and 'null' are useful.
+    * blank 
+        * = True : This field can be kept empty while providing the values.
+        * = False : This field is mandatory and required while saving record.
+    * null 
+        * = True : This field can be kept as null in the db.
+        * = False : This field can not be kept as null in the db.
+    
 
 
