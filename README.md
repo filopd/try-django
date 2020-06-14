@@ -8,7 +8,7 @@ django-admin startproject <PROJECT_NAME> .
 python manage.py runserver
    http://127.0.0.1:8000
 3. Check and update the settings
-Edit file 'settings.py' in folder "<PROJECT_NAME>"
+Edit file 'settings.py' in folder <PROJECT_NAME>
 4. Synch the updated setting in 'settings.py' file.
 python manage.py migrate
 5. Open admin login page.
@@ -19,4 +19,8 @@ python manage.py createsuperuser
    [Stop the server and try this command else you will get an error "auth_user__old"]
    [I tried to upgrade the django to latest version and tried as suggested but above step is enough i feel.]
    [Result after updating First and Last name: "The user “filopd” was changed successfully."]
-
+   [We have used apps 'django.contrib.admin', 'django.contrib.auth']
+7. Term 'root' location where manage.py is present.
+8. Create apps in your project using startapp command.
+python manage.py <appname>
+   [This will create a dir in your root with appname and auto gen code inside it.]
