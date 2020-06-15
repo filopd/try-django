@@ -1,10 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>MyHomePage</title>
-</head>
-<body>
-    <h1>Home Page</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block thisIsFirstBlock %}
+    <h2>Source: home.html</h2>
+    <h3>Block: thisIsFirstBlock</h3>
+{% endblock %}
+{% block thisIsThirdBlock %}
+    <h2>Source: home.html</h2>
+    <h3>Block: thisIsThirdBlock</h3>
+{% block thisIsNestedBlock %}
+    <h2>Source: home.html</h2>
+    <h3>Block: thisIsNestedBlock</h3>
+{% endblock %}
+{% endblock %}
+{% block thisIsFourthBlock %}
+<h2>Source: home.html</h2>
+<h3>Block: thisIsFourthBlock</h3>
+{% block thisIsNestedInFourthBlock %}
+
+{% endblock %}
+{% endblock %}
+<!-- The line below the endblocks are not appearing ont the page.-->
+<i>Source: home.html : This part is outside base.html blocks</i>
