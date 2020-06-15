@@ -101,8 +101,8 @@ django-admin startproject <PROJECT_NAME> .
             * First extend the base.html into child page.
         * "{% block thisIsFirstBlock %}"
             * Start the block and put the content.
-            * "<h2>Source: home.html</h2>"
-            * "<h3>Block: thisIsFirstBlock</h3>"
+                <h6>Source: home.html</h6>
+                <h6>Block: thisIsFirstBlock</h6>
         * "{% endblock %}"
             * Close the block.
     4. If you skip any block without using them if you simply keep them but the content within them is blank.
