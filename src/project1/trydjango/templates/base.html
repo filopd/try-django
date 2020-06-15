@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base Page Title</title>
+</head>
+<body>
+<h1>Source: Base.html : Header</h1>
+{% block thisIsFirstBlock %}
+Content of block thisIsFirstBlock from base.html which is not extended in this page.
+{% endblock %}
+{% block thisIsSecondtBlock %}
+Content of block thisIsSecondtBlock from base.html which is not extended in this page.
+{% endblock %}
+{% block thisIsThirdBlock %}
+Content of block thisIsThirdBlock from base.html which is not extended in this page.
+{% block thisIsNestedBlock %}
+Content of block thisIsNestedBlock from base.html which is not extended in this page.
+{% endblock %}
+{% endblock %}
+{% block thisIsFourthBlock %}
+Content of block thisIsFourthBlock from base.html keep on home page.
+{% block thisIsNestedInFourthBlock %}
+Content of block thisIsNestedInFourthBlock from base.html which is used on contact html.
+{% endblock %}
+{% endblock %}
+<h2>Source: Base.html : Footer</h2>
+</body>
+</html>

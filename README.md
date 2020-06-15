@@ -82,11 +82,32 @@ django-admin startproject <PROJECT_NAME> .
     * Parameter request.user will return the user name which is currenlty logged in the browser.
     * Parameter request.user will return "AnonymousUser" if it is opened in incognito mode.
 22. To add a sample home.html file as a template.
-    1. Create dir (any) templates in root folder and create a simple html in it.
+    1. Create dir (any name) but 'templates' is convention in root folder and create a simple html in it.
     2. In setting.py, update the TEMPLATES as 
         * "'DIRS': [os.path.join(BASE_DIR, "templates")],"
     3. Now go to views.py of pages app and set the last line of home_view function as 
         * "return render(request, "home.html", {})"
+23. Can access values of current request on HTML.
+    Ex. Inside home.html file use "<b>{{request.user}}</b>" gives logged in user name.
+24. Share content across different html pages.
+    1. Create a base.html (convention) file which will be considered as an outlined or common layout.
+    2. Now keep all the "DOCTYPE, HTML, TITLE, etc. tags over here and inside <body> add the below code to create a block.
+        * "{% block thisIsFirstBlock %}" 
+            * This is starting of block with name "thisIsFirstBlock".
+        * "{% endblock %}"
+            * This is the end of the above block.
+    3. Now go to other child pages ex. home.html and add one more contact.html page over here and use the blocks.
+        * "{% extends 'base.html' %}"
+            * First extend the base.html into child page.
+        * "{% block thisIsFirstBlock %}"
+            * Start the block and put the content.
+            * "<h2>Source: home.html</h2>"
+            * "<h3>Block: thisIsFirstBlock</h3>"
+        * "{% endblock %}"
+            * Close the block.
+    4. If you skip any block without using them if you simply keep them but the content within them is blank.
+    5. You can use the nested blocks as well.
+25.
 
 
 
