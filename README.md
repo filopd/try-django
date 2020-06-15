@@ -81,7 +81,12 @@ django-admin startproject <PROJECT_NAME> .
     * Parameter request will return '<WSGIRequest: GET '/'>'
     * Parameter request.user will return the user name which is currenlty logged in the browser.
     * Parameter request.user will return "AnonymousUser" if it is opened in incognito mode.
-
+22. To add a sample home.html file as a template.
+    1. Create dir (any) templates in root folder and create a simple html in it.
+    2. In setting.py, update the TEMPLATES as 
+        * "'DIRS': [os.path.join(BASE_DIR, "templates")],"
+    3. Now go to views.py of pages app and set the last line of home_view function as 
+        * "return render(request, "home.html", {})"
 
 
 
