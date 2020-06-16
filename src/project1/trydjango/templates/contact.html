@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 {% block thisIsFirstBlock %}
-<h2>Source: contact.html</h2>
-<h3>Block: thisIsFirstBlock</h3>
+<p>
+    My Info:<br>
+    Name: {{ f_name }} {{ l_name }}<br>
+        Age: {{ my_age }}<br>
+        Skills: {{ skills }}
+</p>
 {% endblock %}
 {% block thisIsSecondtBlock %}
-<h2>Source: contact.html</h2>
-<h3>Block: thisIsSecondtBlock</h3>
 {% endblock %}
 {% block thisIsFourthBlock %}
 {% block thisIsNestedInFourthBlock %}
-<h2>Source: contact.html</h2>
-<h3>Block: thisIsNestedInFourthBlock</h3>
 {% endblock %}
 {% endblock %}

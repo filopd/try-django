@@ -112,6 +112,13 @@ django-admin startproject <PROJECT_NAME> .
     1. Create a navbar.html file in templates and add some nav tags in it.
     2. In base.html page enter this "{% include 'navbar.html' %}" which will bring the navbar over here.
     3. If you use this "{% include 'navbar.html' %}" on other pages ex. home.html then this will not work.
+26. Template Context:
+    1. You can merge the html template (ex. contact.html) with some context (dictionary data i.e. {}).
+        ex. return render(request, "contact.html", {})
+    2. You need to pass the same when you return particular in views.py file's return render statement for that method.
+    3. Ex. Go to views.py "contact_view(...)" method and add dictionary over there. Pass the same as paramtere to views.
+    4. Only in the respective template html, mention the key of the dict and use the value.
+        ex. "{{ key_of_dictionary }}" this will replace the "key_of_dictionary" by the value on runtime.
 
 
 

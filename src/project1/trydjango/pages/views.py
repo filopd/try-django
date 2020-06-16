@@ -9,4 +9,10 @@ def home_view(request, *args, **kwargs):
 
 
 def contact_view(request, *args, **kwargs):
-    return render(request, "contact.html", {})
+    my_contact = {
+        "f_name": "Priyesh",
+        "l_name": "Naik",
+        "my_age": 26,
+        "skills": ['python','java','bash']
+    }
+    return render(request, "contact.html", my_contact)
