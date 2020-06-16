@@ -119,6 +119,12 @@ django-admin startproject <PROJECT_NAME> .
     3. Ex. Go to views.py "contact_view(...)" method and add dictionary over there. Pass the same as paramtere to views.
     4. Only in the respective template html, mention the key of the dict and use the value.
         ex. "{{ key_of_dictionary }}" this will replace the "key_of_dictionary" by the value on runtime.
-
+27. For Loop in Template:
+    1. If you see above example, list data is printed as enclosed in square brackets.
+    2. In the template add the block as follow:
+        * {% for any_element in listVar %} #This will start the loop.
+        * {{ any_element }}                #This will print the element of list.
+        * {{ forloop.counter }}            #This will the position of the element (index but starting from 1).
+        * {% endfor %}                     #This will end the loop.
 
 

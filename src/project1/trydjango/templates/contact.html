@@ -4,7 +4,10 @@
     My Info:<br>
     Name: {{ f_name }} {{ l_name }}<br>
         Age: {{ my_age }}<br>
-        Skills: {{ skills }}
+        Skills:<br>
+            {% for skill in skills %}
+                * {{ forloop.counter }} : {{ skill }} <br>
+            {% endfor %}
 </p>
 {% endblock %}
 {% block thisIsSecondtBlock %}
