@@ -107,7 +107,11 @@ django-admin startproject <PROJECT_NAME> .
             * Close the block.
     4. If you skip any block without using them if you simply keep them but the content within them is blank.
     5. You can use the nested blocks as well.
-25.
+25. To include a template in another html.
+    Ex. Consider a Navbar which appears on each page.
+    1. Create a navbar.html file in templates and add some nav tags in it.
+    2. In base.html page enter this "{% include 'navbar.html' %}" which will bring the navbar over here.
+    3. If you use this "{% include 'navbar.html' %}" on other pages ex. home.html then this will not work.
 
 
 
