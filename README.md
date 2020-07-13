@@ -2,6 +2,9 @@
 Learning Django Framework
 Author: filopd
 NOTES:
+
+
+
 1. Create Django Project:
 django-admin startproject <PROJECT_NAME> .
 2. Execute the website on localhost.
