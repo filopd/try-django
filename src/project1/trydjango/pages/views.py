@@ -13,6 +13,6 @@ def contact_view(request, *args, **kwargs):
         "f_name": "Priyesh",
         "l_name": "Naik",
         "my_age": 26,
-        "skills": ['python','java','bash']
+        "skills": ['Python', 'Golang-Go', 'Bash']
     }
     return render(request, "contact.html", my_contact)
