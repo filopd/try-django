@@ -34,7 +34,7 @@ django-admin startproject <PROJECT_NAME> .
 12. Now create migrations inside products app and migrate it.
     * python manage.py makemigrations
     * python manage.py migrate
-    * Whenever you change the models.py file then you have two run above 2 commands.
+    * Whenever you change the models.py file then you have to run above 2 commands.
 13. Now Register above model by changing the admin.py file.
     * from .models import Product
     * admin.site.register(Product)
@@ -48,7 +48,6 @@ django-admin startproject <PROJECT_NAME> .
         >>> Product.objects.all()
     * Create new object
         >>> Product.objects.create(title="Product2",description="THis is Second Product",price="99.99",summary="This is average product.")
-        <Product: Product object (2)>
     * Now switch to admin page and veriy the objects in app.
     * This useful for adding the data from the backend.
 17. In models we have number of field types with their properties as per the data type (can refer documentation).
