@@ -8,7 +8,10 @@
 2. Django Development using <a href='https://www.djangoproject.com/start/overview/'>djangoproject</a> And <a href='https://data-flair.training/blogs/django-tutorial/'>Blog</a> [30 Days].
 <table>
 <tr><th> Day </th><th> Topic </th><th> Status </th><th> Link </th></tr>
-<tr><td>1</td><td>Introduction and Features</td><td>Completed</td><td>NA</td></tr>
+<tr><td>1</td><td><ul>
+<li>Introduction and Features</li>
+<li>Introduction and Features</li>
+</ul></td><td>Completed</td><td>NA</td></tr>
 <tr><td>2</td><td></td><td></td><td></td></tr>
 <tr><td>3</td><td></td><td></td><td></td></tr>
 <tr><td>4</td><td></td><td></td><td></td></tr>
