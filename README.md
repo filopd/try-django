@@ -5,4 +5,13 @@
    [Skill-share Source](https://www.skillshare.com/classes/Try-Django-Learn-and-Master-the-Python-Programming-Web-Framework) |
    [Click Here for Notes](https://github.com/filopd/try-django/tree/master/src/project1/trydjango/README.md)
 
-2. 
+2. Django Development using <a href='https://www.djangoproject.com/start/overview/'>djangoproject</a> And <a href='https://data-flair.training/blogs/django-tutorial/'>Blog</a> [30 Days].
+<table>
+<tr><th> Day </th><th> Topic </th><th> Status </th><th> Link </th></tr>
+<tr><td>1</td><td>Introduction and Features</td><td>Completed</td></tr>
+</table>
+
+
+
+
+
