@@ -10,7 +10,7 @@
 <tr><th> Day </th><th> Topic </th><th> Status </th><th> Link </th></tr>
 <tr><td>1</td><td><ul>
 <li>Introduction and Features</li>
-<li>Introduction and Features</li>
+<li>Advantages and Disadvantages</li>
 </ul></td><td>Completed</td><td>NA</td></tr>
 <tr><td>2</td><td></td><td></td><td></td></tr>
 <tr><td>3</td><td></td><td></td><td></td></tr>
