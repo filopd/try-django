@@ -1,4 +1,7 @@
 # Journey to learn Django Web Framework.
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d5ed8fcfed244655af115f1510d6ad04)](https://app.codacy.com/manual/blackbeastfilo/try-django?utm_source=github.com&utm_medium=referral&utm_content=filopd/try-django&utm_campaign=Badge_Grade_Dashboard)
+
 ![Django Wallpaper](https://github.com/filopd/try-django/blob/master/django-wallpaper.jpg)
 
 1. try-django: <br>
