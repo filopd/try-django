@@ -13,7 +13,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [2.7, 3.5, 3.8]
+        python-version: [3.8]
 
     steps:
     - uses: actions/checkout@v2
@@ -30,4 +30,3 @@ jobs:
         cd ./src/project1/trydjango
         dir
         python manage.py test
-        python manage.py testserver
